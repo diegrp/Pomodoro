@@ -12,7 +12,7 @@ const SettingsContextProvider = ( props ) => {
 
   // Função que armazena os dados enviados pelo formulário de atualização do timer
 
-  const updateExecuting = (UpdateSettings) => {
+  const updateExecute = (UpdateSettings) => {
     setExecuting(UpdateSettings);
     setTimerTime(UpdateSettings);
   }
@@ -82,7 +82,7 @@ const SettingsContextProvider = ( props ) => {
       pomodoro,
       executing,
       startAnimate,
-      updateExecuting,
+      updateExecute,
       setCurrentTimer,
       SettingsBtn,
       startTimer,

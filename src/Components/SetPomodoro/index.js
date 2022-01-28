@@ -54,7 +54,7 @@ const SetPomodoro = () => {
   // Formulário de atualização do timer
 
   return (
-    <div class="form-container">
+    <div className="form-container">
       <form noValidate onSubmit={handleSubmit}>
         <div className="input-wrapper">
           <input type="number" name="work" className="input" onChange={handleChange} value={newTimer.work} />
