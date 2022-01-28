@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { SettingsContext } from '../../Context/SettingsContext';
 
 const SetPomodoro = () => {
+
+  const { updateExecute } = useContext(SettingsContext);
 
   // Estado do timer com objeto inicial de dados padrões
 
@@ -45,6 +48,7 @@ const SetPomodoro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    updateExecute();
   }
 
   // Formulário de atualização do timer
