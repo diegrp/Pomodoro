@@ -24,6 +24,49 @@ html, body #__next{
   font-size: 1rem;
 }
 
+/* Background e container geral*/
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--color-btn-text);
+  background: rgb(39, 42, 85);
+  background: radial-gradient(
+    circle,
+    #1E2140 0%,
+    #151932 65%
+  );
+}
+
+/* Título */
+
+.container h3{
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Lista de opções: work, short e long */
+
+.container .labels {
+  width: 274px;
+  list-style: none;
+  display: flex;
+  padding: 0.3rem 0.3rem;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+  background-color: var(--color-btn);
+}
+
+/* active-label do ul */
+
+.active-label{
+  background: var(--color-hover-label);
+  color: var(--color-btn);
+}
+
 /* Contador */
 
 .timer-container{
