@@ -24,6 +24,28 @@ html, body #__next{
   font-size: 1rem;
 }
 
+/* Contador */
+
+.timer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+.timer-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 7.5rem;
+  background: var(--color-background-1);
+  font-size: 3.5rem;
+  color: var(--color-btn-text);
+  box-shadow: 1rem 1.5rem 2rem rgba(0, 0, 0, 0.6);
+}
+
 /* Botões de start e pause */
 
 .button-wrapper{
