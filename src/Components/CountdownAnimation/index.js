@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
+import { SettingsContext } from '../../Context/SettingsContext';
 
 const CountdownAnimation = ({ key, timer, animate, children }) => {
+
+  // Parar a animação depois de ecerrar o tempo no contador
+
+  const { stopAnimate } = useContext(SettingsContext);
   
   // CountdownCircleTimer e vínculo de props aos atributos do componente externo da lib instalada
   
@@ -24,7 +29,7 @@ const CountdownAnimation = ({ key, timer, animate, children }) => {
       size={222}
       trailColor="#151932"
       onComplete={() => {
-
+        stopAnimate();
       }}
     >
       {children}
