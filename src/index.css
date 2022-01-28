@@ -57,3 +57,24 @@ button:hover{
   background: var(--color-btn-text);
   color: var(--color-btn);
 }
+
+/* Formulário para inserir novo time */
+
+.form-container {
+  text-align: center;
+}
+.input-wrapper {
+  margin: 1.5rem;
+}
+.input-wrapper input {
+  width: 100px;
+  height: 100px;
+  padding: 2rem;
+  font-size: 14pt;
+  background: var(--color-btn);
+  color: var(--color-btn-text);
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
