@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Button = () => {
+// Componente Bottão com props
+
+const Button = ({ title, activeClass, _callback }) => {
   return (
-    <div></div>
+    <button className={activeClass} onClick={_callback}>
+      {title}
+    </button>
   )
 }
 
