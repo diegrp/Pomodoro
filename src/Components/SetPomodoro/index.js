@@ -48,7 +48,7 @@ const SetPomodoro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    updateExecute();
+    updateExecute(newTimer);
   }
 
   // Formulário de atualização do timer

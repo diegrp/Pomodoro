@@ -25,7 +25,7 @@ const SettingsContextProvider = ( props ) => {
       active: active_state
     });
     setTimerTime(executing);
-    startAnimate(false);
+    setStartAnimate(false);
   }
 
   // Envia o time para o pomodoro, que leva ao countdownCircleTimer em suas props
@@ -70,9 +70,9 @@ const SettingsContextProvider = ( props ) => {
 
   // Renderização dos minutos e segundos no timer
 
-  const children = ({ reimaningTime }) => {
-    const minutes = Math.floor( reimaningTime / 60 );
-    const seconds = reimaningTime % 60;
+  const children = ({ remainingTime }) => {
+    const minutes = Math.floor( remainingTime / 60 );
+    const seconds = remainingTime % 60;
 
     return `${minutes}:${seconds}`;
   }
@@ -83,6 +83,7 @@ const SettingsContextProvider = ( props ) => {
       executing,
       startAnimate,
       updateExecute,
+      setTimerTime,
       setCurrentTimer,
       SettingsBtn,
       startTimer,
